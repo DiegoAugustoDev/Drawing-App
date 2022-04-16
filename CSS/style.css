@@ -1,0 +1,13 @@
+#screen{
+    width: 800px;
+    height: 800px;
+    border: 1px solid;
+    margin-bottom: 30px;
+}
+
+#foot{
+    width: 785px;
+    height: 40px;
+    border: 1px solid;
+    padding: 10px;
+}
