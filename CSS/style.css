@@ -1,5 +1,5 @@
 #screen{
-    width: 800px;
+    width: 1860px;
     height: 800px;
     border: 1px solid;
     margin-bottom: 30px;
@@ -10,4 +10,5 @@
     height: 40px;
     border: 1px solid;
     padding: 10px;
+    margin: auto;
 }

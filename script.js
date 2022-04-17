@@ -10,13 +10,14 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let screen = document.querySelector("#screen");
     let context = screen.getContext("2d")
-    let reset = document.getElementById("reset")
+    let foot = document.getElementById("foot")
 
     
 
-    screen.width = 800;
+    screen.width = 1860;
     screen.height = 800;
 
+    let lineWidth = context.lineWidth = 2
 
 
     let drawingLine = function(line){
@@ -47,7 +48,19 @@ document.addEventListener("DOMContentLoaded", function(){
 
     cycle()
 
-    reset.addEventListener("click", function(){
-    location.reload();
-})
+    foot.addEventListener("click", function(evt){
+        if(evt.target.id ==="reset"){
+            location.reload()
+        }
+    })
+
+    foot.addEventListener("change", function(evt){
+        if(evt.target.id === "color"){
+            context.strokeStyle = evt.target.value
+        }
+
+        if(evt.target.id === "lineWidth"){
+            context.lineWidth = evt.target.value
+        }
+    })
 })
